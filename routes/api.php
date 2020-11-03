@@ -18,7 +18,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
-Route::get('/provinces', 'ProvincesController@indexProvinces');
-Route::get('/province', 'ProvincesController@searchProvinces');
-Route::get('/cities', 'ProvincesController@indexCities');
+Route::get('/provinces', 'ProvincesCitiesController@indexProvinces');
+Route::get('/province', 'ProvincesCitiesController@searchProvinces');
+Route::get('/cities', 'ProvincesCitiesController@indexCities');
 
