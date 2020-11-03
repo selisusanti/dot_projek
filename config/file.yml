@@ -1,0 +1,2 @@
+storages:
+    database: { client: mysql, connection: { host: 127.0.0.1, port: '50349', user: root, password: password, database: test } }
