@@ -13,6 +13,9 @@
 - cp .env.example .env
 - php artisan serve
 
+untuk postman 
+- https://drive.google.com/file/d/1m4ZOBqodkKx7A544hz_GK3tI0LY7CcV4/view?usp=sharing
+
 
 ## About Laravel
 
