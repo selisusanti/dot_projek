@@ -7,6 +7,20 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+## Instalasi Projek
+- git clone git@github.com:selisusanti/dot_projek.git
+- composer install
+- cp .env.example .env
+- php artisan serve
+
+untuk postman 
+- https://drive.google.com/file/d/1m4ZOBqodkKx7A544hz_GK3tI0LY7CcV4/view?usp=sharing
+
+untuk engineering test di branch engineering_test<br>
+untuk yaml di branch yaml_file_with_symphony<br>
+full branch master
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
