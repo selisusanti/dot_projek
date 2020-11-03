@@ -1,0 +1,9 @@
+storages:
+  database: 
+        client: "{{ env('SQL_CLIENT') }}"
+        connection: ${$env('SQL_CLIENT')}
+        host: "{{ env('DB_HOST') }}"
+        port: %SQL.HOST%
+        user: 
+        password:
+        database:

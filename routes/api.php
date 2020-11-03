@@ -21,4 +21,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('/provinces', 'ProvincesCitiesController@indexProvinces');
 Route::get('/province', 'ProvincesCitiesController@searchProvinces');
 Route::get('/cities', 'ProvincesCitiesController@indexCities');
+Route::get('/yaml', 'ProvincesCitiesController@yamlFile');
 

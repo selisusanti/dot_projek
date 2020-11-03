@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use GuzzleHttp\Client;
 use Illuminate\Support\Facades\Http;
+use Symfony\Component\Yaml\Yaml;
+use Symfony\Component\Yaml\Tag\TaggedValue;
+use Symfony\Component\Yaml\Parser;
 
 /*
     controller untuk province dan cities
@@ -108,9 +111,37 @@ class ProvincesCitiesController extends Controller
             'status' => 200,
             'data'=> $response
         ]);
-        
+
     }
 
 
+    // read yaml
+    public function yamlFile()
+    {
+        //lokasi file yml
+        $filepath = base_path('config/file.yml');
+        $array = [
+            'storages' => [
+                'database' => 
+                    [
+                        'client' => env('SQL_CLIENT'),
+                        'connection' => 
+                        [
+                            'host' => env('SQL_HOST'),
+                            'port' => env('SQL_PORT'),
+                            'user' => env('SQL_USER'),
+                            'password' => env('SQL_PASSWORD'),
+                            'database' => env('SQL_DATABASE')
+                        ]
+                    ]
+            ]
+        ];
+
+        $yaml = Yaml::dump($array);
+        $returnya = file_put_contents($filepath, $yaml);
+        $yamlContents = Yaml::parse(file_get_contents($filepath));
+        return response()->json($yamlContents);
+
+    }
 
 }
