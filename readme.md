@@ -8,10 +8,10 @@
 </p>
 
 ## Instalasi Projek
-git clone git@github.com:selisusanti/dot_projek.git
-composer install
-cp .env.example .env
-php artisan serve
+- git clone git@github.com:selisusanti/dot_projek.git
+- composer install
+- cp .env.example .env
+- php artisan serve
 
 
 ## About Laravel
